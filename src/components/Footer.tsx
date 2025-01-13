@@ -1,0 +1,57 @@
+import { ArrowUp } from "lucide-react";
+import { Button } from "./ui/button";
+import Social from "./Social";
+
+const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <footer className="bg-secondary text-white py-12 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 className="text-2xl font-bold">WebXNet</h3>
+            <p className="mt-4 text-gray-300">
+              Transformando ideias em soluções digitais inovadoras.
+            </p>
+            <div className="mt-6">
+              <Social />
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold">Contato</h4>
+            <div className="mt-4 space-y-2 text-gray-300">
+              <p>Email: contato@webxnet.com.br</p>
+              <p>Tel: (XX) XXXX-XXXX</p>
+            </div>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold">Links Rápidos</h4>
+            <div className="mt-4 space-y-2">
+              <a href="#services" className="block text-gray-300 hover:text-white transition-colors">Serviços</a>
+              <a href="#about" className="block text-gray-300 hover:text-white transition-colors">Sobre</a>
+              <a href="#contact" className="block text-gray-300 hover:text-white transition-colors">Contato</a>
+            </div>
+          </div>
+        </div>
+        <div className="mt-12 pt-8 border-t border-gray-700 text-center text-gray-300">
+          <p>&copy; {new Date().getFullYear()} WebXNet. Todos os direitos reservados.</p>
+        </div>
+      </div>
+      
+      <Button
+        variant="secondary"
+        size="icon"
+        className="fixed bottom-8 right-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 bg-primary hover:bg-primary/90"
+        onClick={scrollToTop}
+        aria-label="Voltar ao topo"
+      >
+        <ArrowUp className="h-5 w-5" />
+      </Button>
+    </footer>
+  );
+};
+
+export default Footer;
