@@ -1,11 +1,11 @@
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
-import { Button } from "./ui/button";
+import { Facebook, Instagram, Linkedin, X } from "lucide-react"
+import { Button } from "./ui/button"
 
 const Social = () => {
   const socialLinks = [
     {
       icon: Facebook,
-      href: "https://facebook.com",
+      href: "https://facebook.com/webxnetBR",
       label: "Facebook",
     },
     {
@@ -14,21 +14,21 @@ const Social = () => {
       label: "Instagram",
     },
     {
-      icon: Twitter,
+      icon: X,
       href: "https://twitter.com",
       label: "Twitter",
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/gilson-peloso/",
       label: "LinkedIn",
     },
-  ];
+  ]
 
   return (
     <div className="flex items-center gap-4 justify-center md:justify-start">
       {socialLinks.map((social) => {
-        const Icon = social.icon;
+        const Icon = social.icon
         return (
           <Button
             key={social.label}
@@ -43,13 +43,13 @@ const Social = () => {
               rel="noopener noreferrer"
               aria-label={social.label}
             >
-              <Icon className="h-5 w-5" />
+              <Icon className="h-5 w-5" size={20} />
             </a>
           </Button>
-        );
+        )
       })}
     </div>
-  );
-};
+  )
+}
 
-export default Social;
+export default Social

@@ -1,19 +1,20 @@
 const About = () => {
   return (
     <section id="about" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mt-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl sm:text-4xl font-bold text-secondary">
-              Sobre a WebXNet
+              Sobre a Webxnet
             </h2>
             <p className="mt-6 text-lg text-gray-600">
-              Somos uma empresa especializada em desenvolvimento web e soluções digitais,
-              com anos de experiência no mercado brasileiro.
+              Somos uma empresa especializada em desenvolvimento web e soluções
+              digitais, com anos de experiência no mercado brasileiro.
             </p>
             <p className="mt-4 text-lg text-gray-600">
-              Nossa missão é transformar ideias em realidade através da tecnologia,
-              oferecendo soluções inovadoras e personalizadas para cada cliente.
+              Nossa missão é transformar ideias em realidade através da
+              tecnologia, oferecendo soluções inovadoras e personalizadas para
+              cada cliente, com a utilização de IA's.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-4">
               <div className="bg-white p-4 rounded-lg shadow-sm">
@@ -36,7 +37,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

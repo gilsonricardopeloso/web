@@ -7,22 +7,24 @@ const Hero = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-secondary animate-fade-in">
             Transformando Ideias em
             <span className="text-primary block mt-2">Soluções Digitais</span>
+            <span className="text-blue-600 block mt-2">Inteligentes</span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto animate-slide-in">
-            Desenvolvemos soluções web personalizadas para impulsionar seu negócio no mundo digital.
+            Use IA especializada no seu setor para automatizar processos e
+            reduzir custos operacionais em 40%.
           </p>
           <div className="mt-10 animate-slide-in">
             <a
               href="#contact"
               className="bg-primary text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-600 transition-colors"
             >
-              Fale Conosco
+              Agende uma consultoria gratuita →
             </a>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
